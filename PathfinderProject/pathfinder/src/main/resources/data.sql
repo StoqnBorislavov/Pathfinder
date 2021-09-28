@@ -23,26 +23,26 @@ INSERT INTO users (id, age, full_name, level, password, username)
 VALUES (4, 33, 'Ivan Ivanov', 'BEGINNER', '12345', 'ivan');
 -- user roles
 -- admin
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (1, 1);
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (1, 2);
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (1, 3);
 -- moderator
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (2, 2);
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (2, 3);
 -- user
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (3, 3);
 -- user 2
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (4, 3);
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (4, 2);
-INSERT INTO users_roles (`user_entity_id`, `roles_id`)
+INSERT INTO users_roles (`user_id`, `roles_id`)
 VALUES (4, 1);
 
 -- categories
@@ -151,8 +151,8 @@ INSERT INTO pictures(title, url, author_id, route_id)
 VALUES ('Shipka 2', 'http://res.cloudinary.com/ch-cloud/image/upload/v1630583467/koncyanx4gqwzt9vxgx4.jpg', 1, 4);
 
 
- INSERT INTO pictures(title, url, author_id, route_id)
- VALUES ('Aladja Manastir', 'http://res.cloudinary.com/ch-cloud/image/upload/v1630583842/qabnwpgq3pp1cui19nn5.jpg', 1, 5);
+INSERT INTO pictures(title, url, author_id, route_id)
+VALUES ('Aladja Manastir', 'http://res.cloudinary.com/ch-cloud/image/upload/v1630583842/qabnwpgq3pp1cui19nn5.jpg', 1, 5);
 
 INSERT INTO pictures(title, url, author_id, route_id)
 VALUES ('Aladja Manastir 2', 'http://res.cloudinary.com/ch-cloud/image/upload/v1630584095/aznlgfzoxpuvl5belukb.jpg', 1, 5);

@@ -10,7 +10,7 @@ import java.util.Set;
 public class Route extends BaseEntity{
 
     private String gpxCoordinates;
-    private LevelEnum levelEnum;
+    private LevelEnum level;
     private String description;
     private String name;
     private User author;
@@ -40,14 +40,14 @@ public class Route extends BaseEntity{
         return this;
     }
 
-    @Column(name = "level_enum")
+    @Column(name = "level")
     @Enumerated(EnumType.STRING)
-    public LevelEnum getLevelEnum() {
-        return levelEnum;
+    public LevelEnum getLevel() {
+        return level;
     }
 
-    public Route setLevelEnum(LevelEnum level) {
-        this.levelEnum = level;
+    public Route setLevel(LevelEnum level) {
+        this.level = level;
         return this;
     }
 
