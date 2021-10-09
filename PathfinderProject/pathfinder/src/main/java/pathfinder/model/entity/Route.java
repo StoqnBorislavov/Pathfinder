@@ -16,6 +16,7 @@ public class Route extends BaseEntity{
     private User author;
     private String videoUrl;
     private Set<Category> categories;
+    private Set<Picture> pictures;
 
     public Route() {
     }
@@ -88,6 +89,16 @@ public class Route extends BaseEntity{
 
     public Route setVideoUrl(String videoUrl) {
         this.videoUrl = videoUrl;
+        return this;
+    }
+
+    @OneToMany(mappedBy = "route")
+    public Set<Picture> getPictures() {
+        return pictures;
+    }
+
+    public Route setPictures(Set<Picture> pictures) {
+        this.pictures = pictures;
         return this;
     }
 }
