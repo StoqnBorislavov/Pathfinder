@@ -92,7 +92,7 @@ public class Route extends BaseEntity{
         return this;
     }
 
-    @OneToMany(mappedBy = "route")
+    @OneToMany(mappedBy = "route", fetch = FetchType.EAGER)
     public Set<Picture> getPictures() {
         return pictures;
     }

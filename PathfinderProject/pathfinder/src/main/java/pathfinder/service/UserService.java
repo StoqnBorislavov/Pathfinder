@@ -1,5 +1,6 @@
 package pathfinder.service;
 
+import pathfinder.model.entity.User;
 import pathfinder.model.service.UserServiceModel;
 
 public interface UserService {
@@ -15,4 +16,5 @@ public interface UserService {
 
     boolean isNameExists(String username);
 
+    User findCurrentLoginUserEntity();
 }
